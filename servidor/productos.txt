@@ -1,0 +1,1 @@
+[{"nombre":"Monitor LG 27 pulgadas","precio":"$40000","id":100},{"nombre":"Monitor Samsung 27 pulgadas","precio":"$40000","id":2},{"nombre":"Monitor Dell 27 pulgadas","precio":"$60000","id":3}]
