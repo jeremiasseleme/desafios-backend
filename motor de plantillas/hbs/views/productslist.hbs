@@ -1,0 +1,15 @@
+
+<h1>Listado de productos</h1>
+<div>
+    {{#if productsExist}}
+    {{#each products}}
+        <div>
+            <p>ID: {{this.id}}</p>
+            <p>Producto: {{this.nombre}}</p>
+            <p>Precio: $ {{this.precio}}</p>
+        </div>
+    {{/each}}
+{{/if}}
+
+</div>
+<a href="./form">Ir a Formulario</a>

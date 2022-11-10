@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Monitor LG 27 pulgadas",
+    "precio": "$40000",
+    "id": 1
+  },
+  {
+    "nombre": "Monitor Samsung 27 pulgadas",
+    "precio": "$40000",
+    "id": 2
+  },
+  {
+    "nombre": "Monitor Dell 27 pulgadas",
+    "precio": "$60000",
+    "id": 3
+  },
+  {
+    "nombre": "Monitor Curvo Apple 27 pulgadas",
+    "precio": "140000",
+    "id": 4
+  },
+  {
+    "nombre": "Teclado RedDragon Indrah",
+    "precio": "30000",
+    "id": 5
+  },
+  {
+    "nombre": "Celular Motorola G52",
+    "precio": "65000",
+    "id": 6
+  }
+]

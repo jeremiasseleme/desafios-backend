@@ -1,0 +1,1 @@
+A pesar de tener mas lineas de codigo para instanciar y hacer que funcione el motor que me parecio mas amigable en la sintaxis y mas simple fue handlebars.
