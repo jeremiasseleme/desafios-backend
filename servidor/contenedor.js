@@ -1,5 +1,5 @@
 const fs = require('fs');
-let id 
+let id
 class Contenedor {
     constructor(nombreArchivo) {
         this.nombreArchivo = nombreArchivo;
@@ -14,12 +14,12 @@ class Contenedor {
             console.log('Se ha producido un error en getAll()', e);
         }
     }
-    
+
     async save(nuevoProducto) {
         const productos = await this.getAll();
         try {
             id = productos.length + 1;
-            productos.push({...nuevoProducto, id});
+            productos.push({ ...nuevoProducto, id });
             await fs.promises.writeFile(this.nombreArchivo, JSON.stringify(productos, null, 2));
             return nuevoProducto;
         } catch (e) {
@@ -30,9 +30,9 @@ class Contenedor {
         try {
             const productos = await this.getAll();
             const producto = productos.find(p => p.id == id);
-            if(producto){
+            if (producto) {
                 return producto;
-            }else{
+            } else {
                 console.log("El ID que ingreso no existe")
             }
         } catch (e) {
@@ -55,24 +55,28 @@ class Contenedor {
             console.log('Se ha producido un error en deleteAll()', e)
         }
     }
-    async updateById (id,nombre,precio) {
-        try {
-            const productos = await this.getAll();
-            const item = productos.find((prod) => prod.id == id);
-            if (item) {
-                item.nombre = nombre;
-                item.precio = precio;
-                console.log(item);
-                await fs.promises.writeFile(this.nombreArchivo, JSON.stringify(productos, null, 2));
-                return item;
-            } else {
-                return { error: "Producto no encontrado" };
-            }
-        } catch (error) {
-            console.log('Se ha producido un error en updateById()', e)
-        }
+    async updateById(id, nombre, precio) {
+        const productos = await this.getAll();
+        const item = productos.find((prod) => prod.id == id);
+        item.nombre = nombre;
+        item.precio = precio;
+        console.log(item);
+        await fs.promises.writeFile(this.nombreArchivo, JSON.stringify(productos, null, 2));
+        return item;
     };
+      
+//   async update(id, nombre, precio) {
+//     const productos = await this.getAll();
+//     const producto = productos.find((product) => product.id == id)
+//     producto.nombre = nombre;
+//     producto.precio = precio;
+//     console.log(producto);
+//     await fs.promises.writeFile(this.nombreArchivo, JSON.stringify(productos, null, 2));
+//     return producto;
+//   }
 }
+
+
 
 
 
@@ -80,7 +84,7 @@ const cont = new Contenedor("productos.txt")
 
 module.exports = Contenedor;
 // cont.save(
-//     {nombre: "Monitor Dell 27 pulgadas", 
+//     {nombre: "Monitor Dell 27 pulgadas",
 //     precio: "$60000"}).then((res)=> console.log(res))
 // cont.deleteAll();
 // cont.getAll().then((res)=>console.log(res))

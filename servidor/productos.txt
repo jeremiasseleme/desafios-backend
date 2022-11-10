@@ -15,6 +15,8 @@
     "id": 3
   },
   {
+    "nombre": "Monitor Curvo Apple 27 pulgadas",
+    "precio": "140000",
     "id": 4
   }
 ]
