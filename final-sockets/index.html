@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Title</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <div id="div-list-products">
+      <h1>LISTA DE PRODUCTOS</h1>
+    </div>
+    <div class="chatYform">
+      <form onsubmit="enviarMsg();return false;">
+        <input id="input-email" required="true"/>
+        <input id="input-msg" required="true"/>
+        <input type="submit" value="ENVIAR!" />
+      </form>
+      <div id="div-list-msgs"></div>
+      <!-- UN DIV PARA PONER LOS PRODUCTOS -->
+      <form onsubmit="cargarProducto();return false">
+        <input type="text" id="input-nombre">
+        <input type="number" id="input-precio">
+        <input type="submit" value="CARGAR">
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
