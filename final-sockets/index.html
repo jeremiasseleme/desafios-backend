@@ -12,23 +12,25 @@
 
 <body>
   <div class="container">
-
-    <div id="div-list-products">
+    <div class="listaDeProductos">
       <h1>LISTA DE PRODUCTOS</h1>
+      <div id="div-list-products">
+      </div>
     </div>
     <div class="chatYform">
-      <form onsubmit="enviarMsg();return false;">
-        <input id="input-email" required="true"/>
-        <input id="input-msg" required="true"/>
+      <form class="formProd" onsubmit="cargarProducto();return false">
+        <h3>Carga tus productos</h3>
+        <input type="text" id="input-nombre" required="true" placeholder="Ingresa el producto">
+        <input type="number" id="input-precio" required="true" placeholder="Ingresa el precio">
+        <input type="submit" value="CARGAR">
+      </form>
+      <form class="formChat" onsubmit="enviarMsg();return false;">
+        <h3>Chat de la plataforma</h3>
+        <input id="input-email" required="true" placeholder="Ingresa tu email" />
+        <input id="input-msg" required="true" placeholder="Ingresa un mensaje" />
         <input type="submit" value="ENVIAR!" />
       </form>
       <div id="div-list-msgs"></div>
-      <!-- UN DIV PARA PONER LOS PRODUCTOS -->
-      <form onsubmit="cargarProducto();return false">
-        <input type="text" id="input-nombre">
-        <input type="number" id="input-precio">
-        <input type="submit" value="CARGAR">
-      </form>
     </div>
   </div>
 </body>

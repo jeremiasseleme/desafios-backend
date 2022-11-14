@@ -20,7 +20,7 @@ socket.on("msg-list", (data) => {
   data.forEach((obj) => {
     html += `
     <div>
-      ${obj.email}(${obj.fecha}) dijo: ${obj.mensaje}
+      <p class="parrafo"><b class="email">${obj.email}</b><small class="fecha">${obj.fecha}</small><i class="mensaje"> dijo: ${obj.mensaje}</i></p>
     </div>
     `;
   });

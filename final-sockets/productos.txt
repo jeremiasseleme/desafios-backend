@@ -18,5 +18,23 @@
     "nombre": "Monitor Curvo Apple 27 pulgadas",
     "precio": "140000",
     "id": 4
+  },
+  {
+    "0": {
+      "nombre": "Monitor x",
+      "precio": "140000"
+    },
+    "id": 5
+  },
+  {
+    "0": {
+      "nombre": "Monitor x",
+      "precio": "140000"
+    },
+    "1": {
+      "nombre": "Monitor x",
+      "precio": "512"
+    },
+    "id": 6
   }
 ]

@@ -1,21 +1,79 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  letter-spacing: 0.05rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
   display: flex;
+  align-items: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  border: 1px solid black;
 }
 
-#div-list-products{
-  width: 45%;
+.listaDeProductos {
+  background-color: darksalmon;
+  width: 49%;
+  padding: 1rem;
   border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.chatYform {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 49%;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.chatYform{
-  width: 45%;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+input {
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+.formChat {
+  background-color: rgb(193, 247, 247);
+  padding: 0.5rem;
+}
+
+.formProd {
+  background-color: lightblue;
+  padding: 0.5rem;
+}
+
+h3,h1{
+  margin-bottom: 1rem;
+}
+
+.email{
+  color: blue;
+}
+
+.fecha{
+  color: brown;
+}
+
+.mensaje{
+  color: green;
+}
+
+#div-list-msgs{
+  background-color: rgb(193, 247, 247);
+}
+
+.parrafo{
+  padding: 10px;
 }
