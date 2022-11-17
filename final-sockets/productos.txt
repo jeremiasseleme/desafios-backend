@@ -1,40 +1,68 @@
 [
   {
-    "nombre": "Monitor LG 27 pulgadas",
-    "precio": "$40000",
-    "id": 1
+    "nombre": "Monitor de tu hermana",
+    "precio": "4564456546",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_762438-MLA48789195457_012022-O.webp",
+    "id": 27
   },
   {
-    "nombre": "Monitor Samsung 27 pulgadas",
-    "precio": "$40000",
-    "id": 2
+    "nombre": "Monitor de tu hermana",
+    "precio": "4564456546",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_762438-MLA48789195457_012022-O.webp",
+    "id": 28
   },
   {
-    "nombre": "Monitor Dell 27 pulgadas",
-    "precio": "$60000",
+    "nombre": "Monitor X",
+    "precio": "45656564",
+    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
     "id": 3
   },
   {
-    "nombre": "Monitor Curvo Apple 27 pulgadas",
-    "precio": "140000",
+    "nombre": "Monitor X",
+    "precio": "45656564",
+    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
     "id": 4
   },
   {
-    "0": {
-      "nombre": "Monitor x",
-      "precio": "140000"
-    },
+    "nombre": "Monitor X",
+    "precio": "45656564",
+    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
     "id": 5
   },
   {
-    "0": {
-      "nombre": "Monitor x",
-      "precio": "140000"
-    },
-    "1": {
-      "nombre": "Monitor x",
-      "precio": "512"
-    },
+    "nombre": "Monitor X",
+    "precio": "45656564",
+    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
     "id": 6
+  },
+  {
+    "nombre": "Monitor X",
+    "precio": "45656564",
+    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
+    "id": 7
+  },
+  {
+    "nombre": "Monitor X",
+    "precio": "45656564",
+    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
+    "id": 8
+  },
+  {
+    "nombre": "Monitor X",
+    "precio": "45656564",
+    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
+    "id": 9
+  },
+  {
+    "nombre": "nachooooooooooooooo",
+    "precio": "4456654456456",
+    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
+    "id": 10
+  },
+  {
+    "nombre": "nachooooooooooooooo",
+    "precio": "4456654456456",
+    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
+    "id": 11
   }
 ]
