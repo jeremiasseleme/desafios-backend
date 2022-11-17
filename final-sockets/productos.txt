@@ -1,68 +1,20 @@
 [
   {
-    "nombre": "Monitor de tu hermana",
-    "precio": "4564456546",
-    "img": "https://http2.mlstatic.com/D_NQ_NP_762438-MLA48789195457_012022-O.webp",
-    "id": 27
+    "nombre": "Monitor Samgung LCD 19 pulgadas",
+    "precio": "50000",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_623948-MLA47874095892_102021-W.webp",
+    "id": 1
   },
   {
-    "nombre": "Monitor de tu hermana",
-    "precio": "4564456546",
-    "img": "https://http2.mlstatic.com/D_NQ_NP_762438-MLA48789195457_012022-O.webp",
-    "id": 28
+    "nombre": "Monitor Samgung Curvo 32 pulgadas",
+    "precio": "135000",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_697940-MLA48760527650_012022-W.webp",
+    "id": 2
   },
   {
-    "nombre": "Monitor X",
-    "precio": "45656564",
-    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
+    "nombre": "Monitor Samgung Curvo 32 pulgadas 4k",
+    "precio": "158000",
+    "img": "https://http2.mlstatic.com/D_NQ_NP_681760-MLA51359759925_082022-W.webp",
     "id": 3
-  },
-  {
-    "nombre": "Monitor X",
-    "precio": "45656564",
-    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
-    "id": 4
-  },
-  {
-    "nombre": "Monitor X",
-    "precio": "45656564",
-    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
-    "id": 5
-  },
-  {
-    "nombre": "Monitor X",
-    "precio": "45656564",
-    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
-    "id": 6
-  },
-  {
-    "nombre": "Monitor X",
-    "precio": "45656564",
-    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
-    "id": 7
-  },
-  {
-    "nombre": "Monitor X",
-    "precio": "45656564",
-    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
-    "id": 8
-  },
-  {
-    "nombre": "Monitor X",
-    "precio": "45656564",
-    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
-    "id": 9
-  },
-  {
-    "nombre": "nachooooooooooooooo",
-    "precio": "4456654456456",
-    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
-    "id": 10
-  },
-  {
-    "nombre": "nachooooooooooooooo",
-    "precio": "4456654456456",
-    "img": "https://mauricomputacion.com.ar/images/productos/21668.webp",
-    "id": 11
   }
 ]

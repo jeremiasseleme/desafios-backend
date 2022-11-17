@@ -59,7 +59,7 @@ io.on("connection", async (socket) => {
     });
     contenedor.save(data)
     //persistir en un archivo
-    // io.sockets.emit("cargaProds", products);
+    io.sockets.emit("cargaProds", products);
 
   });
   /* socket.on("disconnect", (reason) => {
