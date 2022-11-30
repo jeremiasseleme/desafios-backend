@@ -5,19 +5,39 @@ class Contenedor {
     constructor(table) {
         this.table = table;
     }
-    
-    async getAll() {
-        
-        await knex
-            .from(this.table).select("*")
-            .then((res) => {
-                return res
+
+    async createTable() {
+
+        await knex.schema.createTable(this.table, table => {
+            table.increments("id")
+            table.string("nombre")
+            table.integer("precio")
+            table.string("descripcion")
+            table.string("img")
+            table.integer("stock")
+            table.string("codigo")
+        })
+            .then(() => {
+                console.log(`Tabla ${this.table} creada`)
             })
             .catch((err) => {
                 console.log(err)
                 throw err
             })
 
+    }
+
+    async getAll() {
+        try {
+            const productsList = await knex(this.table).select("*");
+            if (productsList.length > 0) {
+                return productsList;
+            } else {
+                return [];
+            }
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     async save(nuevoProducto) {
