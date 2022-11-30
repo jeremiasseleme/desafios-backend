@@ -35,6 +35,8 @@ socket.on("cargaProds", (data) => {
     <div class="contP">
       <h3>Producto:${obj.nombre}</h3>
       <h3>Precio:$${obj.precio}</h3>
+      <h2>Descripcion: ${obj.descripcion}</h2>
+      <p>Stock: ${obj.stock}</p>
       <img src="${obj.img}">
     </div>
     `;
@@ -51,6 +53,9 @@ function enviarMsg() {
 function cargarProducto() {
   const nombre = document.getElementById("input-nombre").value;
   const precio = document.getElementById("input-precio").value;
+  const descripcion = document.getElementById("input-descripcion").value;
   const img = document.getElementById("input-img").value;
-  socket.emit("cargaProd", { nombre: nombre, precio: precio, img: img});
+  const stock = document.getElementById("input-stock").value;
+  const codigo = document.getElementById("input-codigo").value;
+  socket.emit("cargaProd", { nombre: nombre, precio: precio, descripcion: descripcion, img: img, stock: stock, codigo: codigo });
 }

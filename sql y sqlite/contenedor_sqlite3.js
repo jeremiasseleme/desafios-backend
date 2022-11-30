@@ -108,7 +108,7 @@ class Contenedor {
 
 
 
-const cont = new Contenedor("productos")
+const cont = new Contenedor("mensajes")
 
 module.exports = Contenedor;
 // cont.save(
