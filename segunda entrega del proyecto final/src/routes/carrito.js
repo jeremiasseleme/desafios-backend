@@ -1,7 +1,9 @@
-const router = require("express").Router();
+import { Router } from "express"
 const Contenedor = require('../contenedor');
 const contenedor = new Contenedor("./carrito.txt");
 const contenedorP = new Contenedor("./productos.txt")
+
+const router = Router()
 
 router.post("/", async (req,res) =>{
     const cart = {timestamp: Date.now(), productos: []};
@@ -55,4 +57,4 @@ router.get("/:id/productos", async (req,res) => {
     }
 })
 
-module.exports = router
+export { router as CartRouter };

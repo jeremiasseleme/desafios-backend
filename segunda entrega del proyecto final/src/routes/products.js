@@ -1,6 +1,8 @@
-const router = require("express").Router();
+import { Router } from "express"
 const Contenedor = require('../contenedor');
 const contenedor = new Contenedor("./productos.txt");
+
+const router = Router()
 
 router.get("/", async (req, res) => {
     const productos = await contenedor.getAll();
@@ -66,5 +68,5 @@ router.put("/:id",(req,res, next)=>{
     }
 })
 
-module.exports = router
+export { router as ProductRouter }
 
