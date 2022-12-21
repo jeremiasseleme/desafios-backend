@@ -1,11 +1,12 @@
 import { Router } from "express"
-const Contenedor = require('../contenedor');
-const contenedor = new Contenedor("./productos.txt");
+import instancia from './src/daos/index.js';
+const producto = new instancia.producto;
+
 
 const router = Router()
 
 router.get("/", async (req, res) => {
-    const productos = await contenedor.getAll();
+    const productos = await producto.getAll();
     try {
         if (!productos[0]) {
             res.json("No hay productos");
@@ -28,7 +29,7 @@ router.post("/", (req,res, next)=>{
 }, async (req, res) => {
     const { body } = req;
     try {
-        const nuevoProducto = await contenedor.save(body);
+        const nuevoProducto = await producto.save(body);
         res.json({ success: true, error: false, nuevoProducto: nuevoProducto })
     } catch (e) {
         res.json({ success: false, error: e })
@@ -44,7 +45,7 @@ router.delete("/:id", (req,res, next)=>{
 }, async (req, res) => {
     const { id } = req.params;
     try {
-        const productos = await contenedor.deleteById(id);
+        const productos = await producto.deleteById(id);
         res.json({ success: true, error: false });
     } catch (e) {
         res.json({ success: false, error: e });
@@ -61,7 +62,7 @@ router.put("/:id",(req,res, next)=>{
     const { id } = req.params;
     const { nombre, precio } = req.body;
     try {
-        await contenedor.updateById(id, nombre, precio);
+        await producto.updateById(id, nombre, precio);
         res.json({ success: true, error: false });
     } catch (error) {
         res.json({ success: false, error: error });
