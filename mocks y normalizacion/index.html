@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page Title</title>
+  <script src="/socket.io/socket.io.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/index.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="listaDeProductos">
+      <h1>LISTA DE PRODUCTOS</h1>
+      <div id="div-list-products">
+      </div>
+    </div>
+    <div class="chatYform">
+      <form class="formProd" onsubmit="cargarProducto();return false">
+        <h2>Carga tus productos</h2>
+        <input type="text" id="input-nombre" required="true" placeholder="Ingresa el producto">
+        <input type="number" id="input-precio" required="true" placeholder="Ingresa el precio">
+        <input type="text" id="input-descripcion" required="true" placeholder="Ingresa la descripcion del producto">
+        <input type="text" id="input-img" required="true" placeholder="Ingresa la URL de la imagen">
+        <input type="number" id="input-stock" required="true" placeholder="Ingresa el stock del producto">
+        <input type="text" id="input-codigo" required="true" placeholder="Ingresa el codigo del producto">
+        <input type="submit" value="CARGAR">
+      </form>
+      <form class="formChat" onsubmit="enviarMsg();return false;">
+        <h2>Chat de la plataforma</h2>
+        <input id="input-email" required="true" placeholder="Ingresa tu email" />
+        <input id="input-msg" required="true" placeholder="Ingresa un mensaje" />
+        <input type="submit" value="ENVIAR!" />
+      </form>
+      <div id="div-list-msgs"></div>
+    </div>
+  </div>
+</body>
+
+</html>

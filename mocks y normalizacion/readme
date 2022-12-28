@@ -1,0 +1,9 @@
+# Desafio mysql y sqlite3 con Socket.io
+
+Una vez levantados los servicios con XAMP y accediendo con Workbench a la base de datos test en localhost con puerto 3307, podemos inicializar el proyecto con "npm start".
+
+## Crear tablas
+
+Para crear las tablas es necesario ejecutar la linea "node createTables.js"
+
+### Los productos y mensajes se cargan a traves del front.
